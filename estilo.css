@@ -17,6 +17,10 @@
   box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
   background: var(--background);
   font-family: Raleway, sans-serif;
@@ -66,15 +70,16 @@ section#inicio{
     max-width: var(--container);
     margin: 0 auto;
 
-    height: calc(100vh -(40px + 29px));/* altura do header menos altura da tela */
+    height: calc(100vh - (40px + 29px));
 
     display: flex;
     align-items: center;
+
     position: relative;
 }
 
 section#inicio h1{
-    font-size: 88px;
+    font-size: 72px;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -87,8 +92,9 @@ section#inicio h1 span{
 section#inicio img{
     display: block;
     object-fit: contain;
-    width: 493px;
-
+    width: 300px;
+    border-radius: 30px;
+  
     -webkit-mask-image: linear-gradient(to left, var(--background), transparent);
     mask-image: linear-gradient(to left, var(--background), transparent);
 
@@ -332,8 +338,7 @@ div#conteudo-footer form input{
 
 div#conteudo-footer form textarea{
     font-family: Lato;
-
-    height: 67px;
+    
     border-radius: 4px;
     border: 0;
     resize: none;
