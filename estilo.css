@@ -54,3 +54,47 @@ ul#links{
   transition:0.2s
 }
 
+ul#links a:hover{
+    filter: opacity(0.8);
+}
+
+ul#redes img{
+    display: block;
+}
+
+section#inicio{
+    max-width: var(--container);
+    margin: 0 auto;
+
+    height: calc(100vh -(40px + 29px));/* altura do header menos altura da tela */
+
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+section#inicio h1{
+    font-size: 88px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+section#inicio h1 span{
+    color: var(--primary);
+    display: block;
+}
+
+section#inicio img{
+    display: block;
+    object-fit: contain;
+    width: 493px;
+
+    -webkit-mask-image: linear-gradient(to left, var(--background), transparent);
+    mask-image: linear-gradient(to left, var(--background), transparent);
+
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+
