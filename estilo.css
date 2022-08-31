@@ -150,4 +150,63 @@ li.formacao-item p.quando{
     color: var(--text);
 }
 
+section#habilidades{
+    background-color: var(--primary);
+}
 
+section#habilidades div#conteudo-habilidades{
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 158px;
+
+    display: flex;
+    align-items: center;
+}
+
+div#conteudo-habilidades h2{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 48px;
+}
+
+div#conteudo-habilidades h2 span{
+    font-size: 24px;
+    display: block;
+}
+
+div#conteudo-habilidades ul#tecnologia{
+    width: 100%;
+    margin-left: 49px;
+
+    display: flex;
+}
+
+ul#tecnologia li.tecnologia{
+    background-color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+
+    box-shadow: 0px 36px 28px -24px rgba(0, 0, 0, 0.2);
+}
+
+li.tecnologia:not(:last-child){
+    margin-right: 24px;
+    margin-bottom: 24px;
+}
+
+li.tecnologia p{
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color:  var(--primary);
+    margin-top: 8px;
+}
