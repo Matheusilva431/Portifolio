@@ -97,4 +97,57 @@ section#inicio img{
     z-index: -1;
 }
 
+section#formacao{
+    background-color: var(--tertiary);
+}
+
+section#formacao div#conteudo-formacao{
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+div#conteudo-formacao h2{
+    font-size: 48px;
+    font-weight: 700;
+    margin-left: 95px;
+}
+
+div#conteudo-formacao li.formacao-item{
+    display: flex;
+    font-family: Lato;
+}
+
+div#conteudo-formacao ul#lista-formacao{
+    flex-direction: column;
+    margin-top: 37px;
+}
+
+li.formacao-item:not(:first-child){
+    margin-top: 45px;
+}
+
+li.formacao-item div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin-left: 24px;
+}
+
+li.formacao-item h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+li.formacao-item p.onde{
+    font-size: 16px;
+    color: var(--title);
+}
+
+li.formacao-item p.quando{
+    font-size: 14px;
+    color: var(--text);
+}
+
 
